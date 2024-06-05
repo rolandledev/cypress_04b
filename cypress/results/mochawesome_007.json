@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-05T11:57:14.539Z",
+    "end": "2024-06-05T11:57:20.761Z",
+    "duration": 6222,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4bb5ce53-e005-49d8-8983-24429b16f577",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9ebb4370-f61b-484f-86ba-21548714b986",
+          "title": "Quete 04 - Plugins et reporting",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "Quete 04 - Plugins et reporting passes",
+              "timedOut": null,
+              "duration": 435,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "1ae8a35b-7ce6-48fc-8a0d-40f3606cab5d",
+              "parentUUID": "9ebb4370-f61b-484f-86ba-21548714b986",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "go to google.fr",
+              "fullTitle": "Quete 04 - Plugins et reporting go to google.fr",
+              "timedOut": null,
+              "duration": 1344,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.com');\ncy.get('[alt=\"Google\"]').should('be.visible');",
+              "err": {},
+              "uuid": "a304c891-3a89-42ee-9a8d-9e0751b1e945",
+              "parentUUID": "9ebb4370-f61b-484f-86ba-21548714b986",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ae8a35b-7ce6-48fc-8a0d-40f3606cab5d",
+            "a304c891-3a89-42ee-9a8d-9e0751b1e945"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1779,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

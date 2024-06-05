@@ -1,0 +1,143 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-06-05T12:00:21.265Z",
+    "end": "2024-06-05T12:00:33.954Z",
+    "duration": 12689,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c1d62541-50c6-4ab0-89a4-39393fa936df",
+      "title": "",
+      "fullFile": "cypress\\e2e\\spec.cy.js",
+      "file": "cypress\\e2e\\spec.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0b239408-b3ef-498d-b374-43dca3c9d473",
+          "title": "Quete 04 - Plugins et reporting",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "passes",
+              "fullTitle": "Quete 04 - Plugins et reporting passes",
+              "timedOut": null,
+              "duration": 544,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://example.cypress.io');",
+              "err": {},
+              "uuid": "83fc65db-b937-407b-b705-86908c22c9f8",
+              "parentUUID": "0b239408-b3ef-498d-b374-43dca3c9d473",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "go to google.fr",
+              "fullTitle": "Quete 04 - Plugins et reporting go to google.fr",
+              "timedOut": null,
+              "duration": 1454,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.google.com');\ncy.get('[alt=\"Google\"]').should('be.visible');",
+              "err": {},
+              "uuid": "a45853be-3f12-4d82-8ad5-fbf6223996f5",
+              "parentUUID": "0b239408-b3ef-498d-b374-43dca3c9d473",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "go to amazon.fr",
+              "fullTitle": "Quete 04 - Plugins et reporting go to amazon.fr",
+              "timedOut": null,
+              "duration": 2892,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.amazon.fr/');\ncy.wait(1000);\ncy.url().should('contain', 'amazon');",
+              "err": {},
+              "uuid": "1c669388-728c-4ae4-ac9c-4cf078756ada",
+              "parentUUID": "0b239408-b3ef-498d-b374-43dca3c9d473",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "83fc65db-b937-407b-b705-86908c22c9f8",
+            "a45853be-3f12-4d82-8ad5-fbf6223996f5",
+            "1c669388-728c-4ae4-ac9c-4cf078756ada"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4890,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
