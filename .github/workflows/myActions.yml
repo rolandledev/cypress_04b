@@ -26,13 +26,14 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: install cypress
-        run: npm install cypress --save-dev
+        run: npm install      
 
-      #- name: run quete04b
-        #run: npx cypress run --reporter nyan 'Quete 04b.js'
+      #1ere methode
+      - name: run quete04b
+        run: npx cypress run
 
       #2e methode
-      - name: run cypress through actions
-        uses: cypress-io/github-action@v6
-        with:
-          browser: chrome
+      #- name: run cypress through actions
+      #  uses: cypress-io/github-action@v6
+      #  with:
+      #    browser: chrome
