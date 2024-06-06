@@ -28,5 +28,11 @@ jobs:
       - name: install cypress
         run: npm install cypress --save-dev
 
-      - name: run quete04b
-        run: npx cypress run --reporter nyan 'Quete 04b.js'
+      #- name: run quete04b
+        #run: npx cypress run --reporter nyan 'Quete 04b.js'
+
+      #2e methode
+      - name: run cypress through actions
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
